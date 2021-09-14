@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/fitness0.jpg');
+            font-family: 'Baloo Bhaina 2', cursive;
+            height: 1000px;
+
+        }
+
+        .left {
+            border: 2px solid rgb(255, 255, 255);
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 24px;
+        }
+
+        .mid {
+            display: block;
+            width: 47%;
+            margin: 4px auto;
+            /* border: 2px solid rgb(176, 204, 20); */
+        }
+
+        .right {
+            position: absolute;
+            top: 17px;
+            right: 4px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 23px;
+        }
+
+        .navbar li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 20px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(54, 49, 49);
+        }
+
+        .left img {
+            width: 40px;
+            /* filter: invert(100%); */
+            text-align: center;
+
+        }
+
+        .left div {
+            line-height: 10px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            color: white;
+            background-color: black;
+            border: 2px solid grey;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(53, 53, 56);
+        }
+
+        .container {
+            order: 2px solid #000000;
+            margin: 43px 107px;
+            padding: 22px 22px;
+            width: 33%;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+
+            
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 70%;
+            border: 2px solid black;
+            margin: 4px auto;
+            font-size: 15px;
+            border-radius: 8px;
+            /* font-family: 'karla'; */
+
+        }
+        .container h2{
+            text-align: center;
+            color: #000000;
+        }
+        
+    
+        .container button{
+            display: block;
+            width: 322px;
+            margin: 6px auto;
+
+        }
+        .form-group placeholder{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo2.jpg" alt="">
+            <div class="logoname">
+                SF
+            </div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">Fitness calculator</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2> Join the Best Gym of Delhi now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email ID">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone No.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
